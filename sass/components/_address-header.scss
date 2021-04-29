@@ -1,0 +1,24 @@
+.address-header {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.address-header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-header__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* Увеличиваем область нажатия ссылок */
+.address-header__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

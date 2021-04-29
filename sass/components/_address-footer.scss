@@ -1,0 +1,18 @@
+.address-footer {
+  margin-top: 20px;
+  font-style: normal;
+  color: var(--address-footer-color);
+}
+
+.address-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-footer__map {
+  color: var(--primary-white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

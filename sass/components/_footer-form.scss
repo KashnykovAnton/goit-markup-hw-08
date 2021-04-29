@@ -1,0 +1,35 @@
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-form__mail {
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  color: var(--address-footer-color);
+
+  &::placeholder {
+    color: var(--address-footer-color);
+  }
+}
+
+.footer-form__button {
+  position: relative;
+}
+
+.footer-form__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+  cursor: pointer;
+}

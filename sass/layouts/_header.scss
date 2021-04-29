@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid var(--border-line-header);
+}
+
+.header__nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}

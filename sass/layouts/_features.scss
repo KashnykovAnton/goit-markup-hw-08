@@ -1,0 +1,43 @@
+.features {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: var(--bcg-color-grey);
+  }
+
+  &__item:nth-child(1)::before {
+    background-image: url('../images/icons/antenna.svg');
+  }
+
+  &__item:nth-child(2)::before {
+    background-image: url('../images/icons/clock.svg');
+  }
+
+  &__item:nth-child(3)::before {
+    background-image: url('../images/icons/diagram.svg');
+  }
+
+  &__item:nth-child(4)::before {
+    background-image: url('../images/icons/astronaut.svg');
+  }
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
