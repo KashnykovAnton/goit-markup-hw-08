@@ -1018,6 +1018,7 @@ p {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1026,7 +1027,6 @@ p {
     margin-right: 84px;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--title-text-color);
   }
 }
 
@@ -1467,7 +1467,7 @@ p {
 @media screen and (max-width: 767px) {
   .header__thumb {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1624,6 +1624,10 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bcg-color);
+}
+
+.section--header {
+  border-bottom: 1px solid var(--border-line-header);
 }
 
 @media screen and (max-width: 767px) {
