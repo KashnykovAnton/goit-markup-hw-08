@@ -29,6 +29,8 @@
 }
 
 .button--footer-position {
+  position: relative;
+  z-index: 1;
   padding-top: 10px;
   padding-right: 62px;
   padding-bottom: 10px;
