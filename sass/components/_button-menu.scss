@@ -1,0 +1,47 @@
+.button-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+  }
+}
+  
+  .button-menu--icon-cross {
+    display: none;
+  }
+  
+  .button-menu.is-open .button-menu--icon-cross {
+    display: block;
+
+  }
+  
+  .button-menu.is-open .button-menu--icon-menu {
+    display: none;
+  }
+  
+
+  .button-svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary-black-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    .button-menu:focus &,
+    .button-menu:hover & {
+      fill: var(--accent-color);
+    }
+
+    .button-menu.is-open & {
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 1;
+      }
+
+  }
+  

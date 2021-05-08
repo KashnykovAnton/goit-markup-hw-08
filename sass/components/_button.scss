@@ -2,7 +2,8 @@
 .button {
   display: block;
   border-radius: 4px;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   border: 1px solid transparent;
   font-family: inherit;
   font-weight: 700;
@@ -24,7 +25,7 @@
 .button--hero-position {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 32px;
+  // padding: 10px 32px;
 }
 
 .button--footer-position {
@@ -32,7 +33,6 @@
   padding-right: 62px;
   padding-bottom: 10px;
   padding-left: 29px;
-  margin-right: 0;
 
   &:hover,
   &:focus {
@@ -45,3 +45,4 @@
   margin-right: auto;
   padding: 10px 55px;
 }
+

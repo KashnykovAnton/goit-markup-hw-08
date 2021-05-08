@@ -1,9 +1,36 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (max-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+    
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  
+  &--hero {
+
+    @media screen and (max-width: $desktop) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: var(--bcg-color-hero);
+    }
+  }
 
   &--no-padding {
     padding-top: 0;
+
+    @media screen and (max-width: $desktop-1) {
+      display: none;
+    }
   }
 
   &--dark-bg {
@@ -14,5 +41,22 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--bcg-color);
+  }
+
+  &--header {
+    @media screen and (max-width: $tablet-1) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }

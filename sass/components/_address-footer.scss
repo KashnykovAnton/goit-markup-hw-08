@@ -2,10 +2,14 @@
   margin-top: 20px;
   font-style: normal;
   color: var(--address-footer-color);
-}
 
-.address-footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .address-footer__map {

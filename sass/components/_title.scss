@@ -1,17 +1,33 @@
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .caption-title {
   display: block;
-  margin-top: 15px;
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  &--tablet {
+    @media screen and (min-width: $tablet) {
+      margin-top: 5px;
+    }
+  }
+
+  &--desktop {
+    @media screen and (min-width: $desktop) {
+      margin-top: 12px;
+    }
+  }
 }

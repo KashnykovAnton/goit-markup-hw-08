@@ -1,0 +1,32 @@
+// @media screen and (max-width: 767px) 
+
+    .header-socials {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    .header-socials__link {
+        position: relative;
+    }
+
+    .header-socials__item:not(:last-child) {
+        margin-right: 20px;
+
+        .header-socials__link::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            width: 1px;
+            height: 100%;
+            background-color: var(--modal-form-border);
+        }
+    }

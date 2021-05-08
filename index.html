@@ -10,49 +10,73 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="section section--header">
       <div class="container">
-        <div class="header__nav-main">
-          <nav class="header__nav">
-            <a href="./index.html" class="link logo"> Web<span class="logo--black">Studio</span> </a>
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a href="./index.html" class="link nav-list__link nav-list__link--current">Студия</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="./portfolio.html" class="link nav-list__link">Портфолио</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="" class="link nav-list__link">Контакты</a>
-              </li>
+        <div class="header">
+          <a href="./index.html" class="link logo"> Web<span class="logo--black">Studio</span> </a>
+          <button type="button" class="button-menu" aria-expanded="false" aria-controls="header-thumb" data-menu-button>
+            <svg class="button-svg" aria-label="Переключатель мобильного меню">
+              <use class="button-menu--icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>>
+              <use class="button-menu--icon-cross" href="./images/icons/sprite.svg#icon-cross"></use>>
+            </svg>
+          </button>
+          <div class="header__thumb" id="header-thumb" data-menu>
+            <nav class="header__nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="./index.html" class="link nav-list__link nav-list__link--current">Студия</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="./portfolio.html" class="link nav-list__link">Портфолио</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="link nav-list__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="address-header">
+              <div class="address-header--thumb">
+                <li class="address-header__item address-header--menu-mail">
+                <a href="mailto:info@devstudio.com" class="link address-header__link">
+                  <svg class="address-header__icon" width="16" height="12">
+                    <use href="./images/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+                </li>
+                <li class="address-header__item">
+                <a href="tel:+380961111111" class="link address-header__link">
+                  <svg class="address-header__icon" width="10" height="16">
+                    <use href="./images/icons/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+                </li>
+              </div>
+              <ul class="header-socials">
+                <li class="header-socials__item">
+                  <a class="link header-socials__link" href="">Instagram</a>
+                </li>
+                <li class="header-socials__item">
+                  <a class="link header-socials__link" href="">Twitter</a>
+                </li>
+                <li class="header-socials__item">
+                  <a class="link header-socials__link" href="">Facebook</a>
+                </li>
+                <li class="header-socials__item">
+                  <a class="link header-socials__link" href="">LinkedIn</a>
+                </li>
+              </ul>
             </ul>
-          </nav>
-          <ul class="address-header">
-            <li class="address-header__item">
-              <a href="mailto:info@devstudio.com" class="link address-header__link">
-                <svg class="address-header__icon" width="16" height="12">
-                  <use href="./images/icons/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="address-header__item">
-              <a href="tel:+380961111111" class="link address-header__link">
-                <svg class="address-header__icon" width="10" height="16">
-                  <use href="./images/icons/sprite.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <!-- Герой -->
-      <section class="hero">
-        <div class="hero__container">
+      <section class="section section--hero">
+        <div class="container hero">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button button--hero-position" data-modal-open>Заказать услугу</button>
         </div>
@@ -338,7 +362,7 @@
             </ul>
           </div>
           <div class="footer-main__thumb">
-            <b class="caption-title">присоединяйтесь</b>
+            <b class="caption-title caption-title--tablet caption-title--desktop">присоединяйтесь</b>
             <ul class="socials-list">
               <li class="socials-list__item">
                 <a href="" class="socials-list__link" target="_blank" rel="noopener noreferrer">
@@ -371,7 +395,7 @@
             </ul>
           </div>
           <div class="footer-main__thumb">
-            <b class="caption-title">подпишитесь на рассылку</b>
+            <b class="caption-title caption-title--desktop">подпишитесь на рассылку</b>
             <form class="footer-form">
               <input type="email" class="footer-form__mail" name="user-mail" placeholder="E-mail" />
               <div class="footer-form__button">
@@ -437,5 +461,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

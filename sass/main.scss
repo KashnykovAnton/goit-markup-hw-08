@@ -1,5 +1,6 @@
 @import './vendors/modern-normalize';
 @import './utils/variables';
+@import './utils/breakpoints';
 
 @import './base/fonts';
 @import './base/common';
@@ -7,9 +8,11 @@
 
 @import './components/address-footer';
 @import './components/address-header';
+@import "./components/button-menu";
 @import './components/button-portfolio';
 @import './components/button';
 @import './components/footer-form';
+@import "./components/header-socials";
 @import './components/form';
 @import './components/logo';
 @import './components/modal';

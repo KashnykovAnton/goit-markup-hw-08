@@ -1,9 +1,25 @@
 .button-set {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    margin-bottom: 50px;
+    }
 
   &__item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+.button-set__item {
+  @media screen and (max-width: $tablet-1) {
+  margin-bottom: 15px;
   }
 }

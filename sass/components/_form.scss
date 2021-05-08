@@ -6,6 +6,7 @@
   cursor: pointer;
 }
 
+
 .form__label {
   position: absolute;
   top: -18px;
@@ -89,6 +90,16 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+
+    &-text {
+      font-size: 12px;
+      line-height: 1.17;
+
+      @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
 }
 
 .form__checkbox-icon {
