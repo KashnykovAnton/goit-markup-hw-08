@@ -1,22 +1,62 @@
+.section--hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url("../images/gallery/mobile/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) 
+    {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url("../images/gallery/mobile/hero-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: $mobile) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url("../images/gallery/tablet/hero-tablet.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) 
+      {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+      url("../images/gallery/tablet/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url("../images/gallery/desktop/hero-desktop.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) 
+      {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+      url("../images/gallery/desktop/hero-desktop@2x.jpg");
+    }
+  }
+}
 
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/her!!!.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+ 
+  @media screen and (max-width: $desktop) {
+    height: 400px;
+  }
 
-@media screen and (max-width: $desktop) {
-  height: 400px;
-}
-@media screen and (min-width: $desktop) {
-  height: 600px;
-}
+  @media screen and (min-width: $desktop) {
+    height: 600px;
+  }
 }
 
 .hero__title {
@@ -32,11 +72,13 @@
   @media screen and (min-width: $mobile) {
     width: 360px;
     font-size: 26px;
-    line-height: 1.62;}
+    line-height: 1.62;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 630px;
     font-size: 44px;
-    line-height: 1.36;}
+    line-height: 1.36;
+  }
   
 }
